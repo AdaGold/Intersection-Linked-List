@@ -7,8 +7,8 @@ class Node:
 def intersection_node(headA, headB):
     """ Will return the node at which the two lists intersect.
         If the two linked lists have no intersection at all, return None.
-        Time Complexity: ?
-        Space Complexity: ?
+        Time Complexity: O(n+m)
+        Space Complexity: O(1)
     """
     l1, l2 = headA, headB
     while l1 != l2:
