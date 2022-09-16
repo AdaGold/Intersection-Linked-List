@@ -165,14 +165,14 @@ def test_will_return_tail_if_tail_only_intersection():
 
     node_c1 = Node("C")
     node_s1 = Node("S")
-    node_f2 = Node("F")
+    node_f1 = Node("F")
     #List A: [d, q, f1]
     node_d1.next = node_q1
     node_q1.next = node_f1
 
-    #List B: [c, s, f2]
+    #List B: [c, s, f1]
     node_c1.next = node_s1
-    node_s1.next = node_f2
+    node_s1.next = node_f1
 
     head_a = node_d1
     head_b = node_c1
