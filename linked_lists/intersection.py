@@ -22,12 +22,15 @@ def intersection_node(headA, headB):
     
     while headA and headB:
 # '''check to see if current_a is equal to current_b:'''
+        if current_a is None and current_b is not None:
+            current_a = headA
+            current_b = current_b.next
+        if current_b is None and current_a is not None:
+            current_b = headB
+            current_a = current_a.next
         while current_a != current_b:
             current_a = current_a.next
             current_b = current_b.next
-            ##  if current_a is none or current_b is None 
-            # reset pointer to head of opposite list
-
             # return first
     # '''set the empty variable to first same node value'''
         if current_a == current_b:
