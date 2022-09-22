@@ -152,3 +152,31 @@ def test_will_return_none_nodes_have_same_value_different_reference():
 
     #Assert
     assert answer is None
+
+
+    ## create a test case to chek if the end of the linked lists are the same value
+    '''Assume any intersection includes the tails of each list.'''
+
+def test_will_return_tail_if_tail_intersection():
+    #arrange
+    node_d1 = Node("D")
+    node_q1 = Node("Q")
+    node_f1 = Node("F")
+
+    node_c1 = Node("C")
+    node_s1 = Node("S")
+    node_f1 = Node("F")
+    #List A: [d, q, f1]
+    node_d1.next = node_q1
+    node_q1.next = node_f1
+
+    #List B: [c, s, f1]
+    node_c1.next = node_s1
+    node_s1.next = node_f1
+
+    head_a = node_d1
+    head_b = node_c1
+    #act
+    answer = intersection_node(head_a, head_b)
+    #assert
+    assert answer == node_f1

@@ -16,7 +16,7 @@ The following two linked lists do _not_ intersect at all because while the node 
 
 `linked_list_b: 1 -> 2 -> 5 -> 4 -> 3` 
 
-Thereare no cycles anywhere in the linked list structures. Assume any intersection includes the tails of each list.
+There are no cycles anywhere in the linked list structures. Assume any intersection includes the tails of each list.
 
 
 The linked lists must retain their original structure after the function returns. 
